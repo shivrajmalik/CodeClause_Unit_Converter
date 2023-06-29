@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="Unit Converter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="converter">
+            <input type="number" id="inputValue" placeholder="Enter value to change">
+            <select id="inputUnit">
+                <optgroup label="Length">
+                    <option value="cm">Centimeter</option>
+                    <option value="m">Meter</option>
+                    <option value="km">Kilometer</option>
+                    <option value="in">Inch</option>
+                    <option value="ft">Foot</option>
+                    <option value="yd">Yard</option>
+                    <option value="mi">Mile</option>
+                </optgroup>
+                <optgroup label="Temperature">
+                    <option value="c">Celsius</option>
+                    <option value="f">Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+                </optgroup>
+                <optgroup label="Area">
+                    <option value="sqcm">Square Centimeter</option>
+                    <option value="sqm">Square Meter</option>
+                    <option value="sqkm">Square Kilometer</option>
+                    <option value="sqin">Square Inch</option>
+                    <option value="sqft">Square Foot</option>
+                    <option value="sqyd">Square Yard</option>
+                    <option value="sqmi">Square Mile</option>
+                </optgroup>
+                <optgroup label="Weight">
+                    <option value="g">Gram</option>
+                    <option value="kg">Kilogram</option>
+                    <option value="lb">Pound</option>
+                    <option value="oz">Ounce</option>
+                </optgroup>
+                <optgroup label="Time">
+                    <option value="sec">Second</option>
+                    <option value="min">Minute</option>
+                    <option value="hr">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="wk">Week</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </optgroup>
+            </select>
+            <select id="outputUnit"></select>
+            <button onclick="convert()">Convert</button>
+            <h2 id="result"></h2>
+        </div>
+    </div>
+
+    <script src="Unit Converter.js"></script>
+</body>
+</html>
